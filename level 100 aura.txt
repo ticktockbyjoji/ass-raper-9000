@@ -1,0 +1,110 @@
+
+-- this is just IY modded LOL also run ;facebang [whoever tf] 25 when it says loaded rape target idk how to code that shit yet :sob:
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-KOLINSKI-admin-19000"))()
+
+local messages = {
+    "Ḷ̣ọ̣ạ̣ḍ̣ị̣ṇ̣ɡ̣:̣ ̣Ạ̣ ̣ṛ̣ạ̣р̣ẹ̣ ̣ṿị̣с̣ṭị̣ṃ̣!̣ ̣Ụ̣р̣ ̣ụ̣р̣ ̣ạ̣ṇ̣ḍ̣ ̣ạ̣ẉạ̣ỵ̣!̣",
+    "Ạ̣ḷ̣ṃ̣ọ̣ṣ̣ṭ ̣ṭḥẹ̣ṛ̣ẹ̣.̣.̣ ̣ẉḥọ̣ṣ̣ ̣ṛ̣ẹ̣ạ̣ḍ̣ỵ̣ ̣ṭọ̣ ̣ḅẹ̣ ̣ṛ̣ạ̣р̣ẹ̣ḍ̣?̣",
+    "Ḍ̣ị̣ḍ̣ḍ̣ỵ̣ ̣ṭḥẹ̣ ̣ḍ̣ị̣ḍ̣ḍ̣ḷ̣ẹ̣ṛ̣ ̣ị̣ṣ̣ ̣ạ̣ḷ̣ṃ̣ọ̣ṣ̣ṭ ̣ṭḥẹ̣ṛ̣ẹ̣.̣.̣",
+    "Ṣ̣ụ̣с̣с̣ẹ̣ṣ̣ṣ̣f̣ụ̣ḷ̣ḷ̣ỵ̣ ̣ḷ̣ọ̣ạ̣ḍ̣ẹ̣ḍ̣ ̣ṛ̣ạ̣р̣ẹ̣ ̣ṭạ̣ṛ̣ɡ̣ẹ̣ṭ!",
+    "Ạ̣Ḥ ̣ḄỊ̣Т̣С̣Ḥ ̣F̣Ụ̣С̣Ḳ̣",
+    "Ỵ̣Ọ̣Ụ̣ ̣Ṣ̣Ụ̣С̣Ḳ̣ ̣Ạ̣ ̣Ḍ̣Ị̣С̣Ḳ̣ ̣Ṣ̣Ọ̣ ̣Ģ̣Ọ̣Ọ̣Ḍ̣",
+    "Ṇ̣Ģ̣Ḥ ̣F̣Ụ̣С̣Ḳ̣Ḳ̣",
+    "Ģ̣Ạ̣ḤḤḤ ̣Ṣ̣ḤỊ̣Т̣",
+    "F̣Ụ̣С̣Ḳ̣ ̣Ỵ̣Ẹ̣Ạ̣Ḥ ̣ḄỊ̣Т̣С̣Ḥ",
+    "Ḳ̣Ẹ̣Ẹ̣Р̣ ̣Ṣ̣Ụ̣С̣Ḳ̣Ị̣Ṇ̣Ģ̣ ̣ṬḤẠ̣Т̣ ̣Ḍ̣Ị̣С̣Ḳ̣",
+    "Ạ̣ḤḤḤ ̣Ị̣Ṃ̣ ̣Ģ̣Ọ̣Ṇ̣Ṇ̣Ạ̣ ̣С̣Ụ̣Ṃ̣Ṃ̣",
+    "*̣с̣ụ̣ṃ̣ṣ̣ ̣ị̣ṇ̣ ̣ụ̣ṛ̣ ̣ṃ̣ọ̣ụ̣т̣ḥ*̣ ̣Ỵ̣Ọ̣Ụ̣ ̣ḄẸ̣Т̣Т̣Ẹ̣Ṛ̣ ̣Ṣ̣ẈẠ̣Ḷ̣Ḷ̣Ọ̣Ẉ ̣ṬḤẠ̣Т̣ ̣Ỵ̣Ọ̣Ụ̣ ̣ẈḤỌ̣Ṛ̣Ẹ̣",
+    "Whew, toodles! See you later, alligator."
+}
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "FireScriptGui"
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 300, 0, 150)
+frame.Position = UDim2.new(0.5, -150, 0.5, -75)
+frame.BackgroundColor3 = Color3.new(0, 0, 0)
+frame.BackgroundTransparency = 0.5
+frame.Parent = screenGui
+
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(1, 0, 0, 50)
+titleLabel.Position = UDim2.new(0, 0, 0, 10)
+titleLabel.Text = "Click here to fire the script!"
+titleLabel.TextColor3 = Color3.new(1, 1, 1)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Parent = frame
+
+local goButton = Instance.new("TextButton")
+goButton.Size = UDim2.new(0.6, 0, 0, 50)
+goButton.Position = UDim2.new(0.2, 0, 0, 70)
+goButton.Text = "Go!"
+goButton.BackgroundColor3 = Color3.new(1, 0, 0)
+goButton.TextColor3 = Color3.new(0, 0, 0)
+goButton.Parent = frame
+
+local function sendMessages()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local rootPart = character:WaitForChild("HumanoidRootPart")
+
+    while true do
+        local nearestPlayer
+        local nearestDistance = math.huge
+
+        for _, otherPlayer in ipairs(game.Players:GetPlayers()) do
+            if otherPlayer ~= player and otherPlayer.Character and otherPlayer.Character:FindFirstChild("HumanoidRootPart") then
+                local distance = (rootPart.Position - otherPlayer.Character.HumanoidRootPart.Position).magnitude
+                if distance < nearestDistance then
+                    nearestDistance = distance
+                    nearestPlayer = otherPlayer
+                end
+            end
+        end
+
+        for i, message in ipairs(messages) do
+            for angle = 0, 360, 10 do
+                rootPart.CFrame = rootPart.CFrame * CFrame.Angles(0, math.rad(10), 0)
+                wait(0.03)
+            end
+
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message, "All")
+            wait(1.5)
+        end
+
+        break
+    end
+end
+
+goButton.MouseButton1Click:Connect(function()
+    sendMessages()
+end)
+
+local dragging
+local dragStart
+local startPos
+
+frame.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = true
+        dragStart = input.Position
+        startPos = frame.Position
+    end
+end)
+
+frame.InputChanged:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseMovement then
+        if dragging then
+            local delta = input.Position - dragStart
+            frame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+        end
+    end
+end)
+
+frame.InputEnded:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.MouseButton1 then
+        dragging = false
+    end
+end)
